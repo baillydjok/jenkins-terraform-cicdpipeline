@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "myjenkinsbucket"
+    bucket = "terraformjenkinscicd"
     key    = "jkt.tfstate"
     region = "us-west-2"
-    dynamodb_table = "tfstate"
+    dynamodb_table = ""
   }
 }
